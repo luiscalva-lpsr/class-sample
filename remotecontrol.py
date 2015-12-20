@@ -4,12 +4,11 @@ def star(myTurtle):
 	side = 0
 	myTurtle.color('purple')
 	myTurtle.left(36)
-	myTurtle.fwd(100)
+	myTurtle.forward(100)
 	while side < 10:
 		myTurtle.left(144)
-		myTurtle.fwd(100)
+		myTurtle.forward(100)
 		side = side + 1
-
 # create the root Tkinter window and a Frame to go in it
 root = Tk()
 frame = Frame(root)

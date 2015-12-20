@@ -1,4 +1,3 @@
-
 # shapeDrawer.py
 # draws user-input shapes in random places on the screen
 # with random sizes and colors
@@ -6,7 +5,8 @@
 # bring in the packages of functions we need
 import random
 import turtle
- 
+Rcolor = ['blue', 'green', 'red', 'purple', 'yellow','orange','pink']
+
 # -------- functions start here ----------------
  
 def regular_triangle(myTurtle, x, y, side):
@@ -15,6 +15,7 @@ def regular_triangle(myTurtle, x, y, side):
         myTurtle.pendown()
         side_count = 0
         while side_count < 3:
+                myTurtle.color(random.choice(Rcolor))
                 myTurtle.forward(side)
                 myTurtle.right(120)
                 side_count = side_count + 1
@@ -25,6 +26,7 @@ def regular_square(myTurtle, x, y, side):
 	myTurtle.pendown()
 	sidecount = 0
 	while sidecount < 4:
+		myTurtle.color(random.choice(Rcolor))
 		myTurtle.fd(side)
 		myTurtle.left(90)
 		sidecount = sidecount + 1 
@@ -35,6 +37,7 @@ def regular_pentagon(myTurtle, x, y, side):
         myTurtle.pendown()
         sidecount = 0
 	while sidecount < 5:
+		myTurtle.color(random.choice(Rcolor))
 		myTurtle.fd(side)
 		myTurtle.left(72)
 		sidecount = sidecount + 1
@@ -45,6 +48,7 @@ def regular_hexagon(myTurtle, x, y, side):
         myTurtle.pendown()
         sidecount = 0
 	while sidecount < 6:
+		myTurtle.color(random.choice(Rcolor))
 		myTurtle.fd(side)
 		myTurtle.left(60)
 		sidecount = sidecount + 1 
@@ -54,6 +58,7 @@ def regular_octagon(myTurtle, x, y, side):
         myTurtle.pendown()
         sidecount = 0
 	while sidecount < 8:
+		myTurtle.color(random.choice(Rcolor))
 		myTurtle.fd(side)
 		myTurtle.left(45)
 		sidecount = sidecount + 1
@@ -62,6 +67,7 @@ def circle(myTurtle, x, y, radius):
 	myTurtle.penup()
         myTurtle.goto(x,y)
         myTurtle.pendown()
+        myTurtle.color(random.choice(Rcolor))
         myTurtle.circle(radius)
  
 # -------- execution starts here ----------------
@@ -70,7 +76,7 @@ print("Welcome to the random shape drawer!")
 print("You choose the shapes, and we choose the position, color, and size.")
  
 squirt = turtle.Turtle()
- 
+
 shape = ""
 while shape != "exit":
         print("Enter a shape - your choices are triangle, square, pentagon, hexagon, octagon, and circle.")
@@ -93,3 +99,5 @@ while shape != "exit":
                 regular_octagon(squirt, randx, randy, randside)
         elif shape == 'circle':
                 circle(squirt, randx, randy, randside)
+
+
