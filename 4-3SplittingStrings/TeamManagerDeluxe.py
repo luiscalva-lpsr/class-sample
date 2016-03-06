@@ -16,22 +16,36 @@ class Player(object):
 		print('Kit Number: ' + str(self.kitNumber))
 		print('Position: ' + str(self.position))
 
+#creates a function that will save the file of the user's team
 def saveTeam(playerlist, filename):
+	# opens the file 
 	userFile = open(filename, 'a')
+	# makes a for loop that will write each player the user created to the file
 	for player in FUT:
 		userFile.write(player.name + " "  + str(player.age) + " " + str(player.goals) + " "  + str(player.kitNumber) + " "  + str(player.position) + '\n')
+	# closes the file
 	userFile.close()
 
 
+# creates a function that will load a team the user created
 def loadTeam(filename):
+	# makes an empty list
 	list = []
+	# opens a list and reads it
 	userFile = open(filename, 'r')
+	# Creates a variable to read the curren line of the file
 	myString = userFile.readline()
+	# creates a while loop that will appen each player to the list in the code
 	while myString != "":
+		# splits the file turning each line into a list
 		myLine = myString.split()
+		# appends each line to the list 
 		list.append(Player(myLine[0], myLine[1], myLine[2], myLine[3], myLine[4]))	
+		# reads the nexr line of the file 
 		myString = userFile.readline()
+	#closes the file
 	userFile.close()
+	# returns the list of players
 	return list
 
 #prints the words in the parenthesis
@@ -41,10 +55,14 @@ print('2. To start a new team')
 #creates a variable and sets its value to whatever the user inputs
 teamManagerChoice = int(raw_input())
 
+# starts a loop for the first chioce
 if teamManagerChoice == 1:
 	print("Enter your team file name plus its 'tmd' extension.")
+	# creates a varirable fot the user to input their file name
 	userfile = raw_input()
+	# loads the user's file
 	TheTeam = loadTeam(userfile)
+	# starts team manager game
 	game = 0
 	while game == 0:
 		#gives the user the options of what to do by picking a number
@@ -101,11 +119,14 @@ if teamManagerChoice == 1:
 			menu_button = int(raw_input())
 			if menu_button == 0:
 				choice = 0
-	
+		# creates a variable for the user to save their team
 		while choice == 3:
+			# ask their user to title their team
 			print("What would you like to title your team?")
 			userfile = raw_input()
+			# Saves the user's team
 			saveTeam(FUT, userfile + ".tmd")
+			# tells the user to return to the main menu
 			print('Enter 0 to go back to the menu')
 			menu_button = int(raw_input())
 	 		if menu_button == 0:
@@ -118,8 +139,11 @@ if teamManagerChoice == 1:
 			game = game + 1
 			teamManagerChoice = teamManagerChoice - 1
 
+# starts a loop for the second choice of the team
 else:
+	# makes an empty list
 	list = []
+	# starts up team manager game
 	game = 0
 	while game == 0:
 
@@ -178,7 +202,7 @@ else:
 	                menu_button = int(raw_input())
 	                if menu_button == 0:
 	                        choice = 0
-	 
+	 	# Saves the team just like in option 1
 	        while choice == 3:
 	                print("What would you like to title your team?")
 	                userfile = raw_input()
