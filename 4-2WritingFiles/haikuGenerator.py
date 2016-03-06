@@ -1,3 +1,5 @@
+Haiku = []
+
 # greets the user 
 print("Welcome to the Haiku Generator!")
 
@@ -29,7 +31,7 @@ userHaiku = raw_input()
 userFile = open(userHaiku, 'w')
 
 # creates a list that contains all the lines of the user's haiku
-Haiku = [firstLine, secondLine, thirdLine]
+Haiku.append()
 
 # creates a for loop that writes to a new file writing each line of the haiku on separate line 
 for line in Haiku:
