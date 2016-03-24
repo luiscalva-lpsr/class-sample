@@ -94,5 +94,3 @@ while leave_teamManager == 5:
 		choice = 0
 
 		leave_teamManager = leave_teamManager + 1
-	
-
