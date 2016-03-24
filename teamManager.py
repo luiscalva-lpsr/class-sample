@@ -70,7 +70,7 @@ while leave_teamManager == 5:
 		FUT.append(Player(user_player_name, user_player_age, user_player_goals))
 		
 		#gives the user the option to go the main menu or keep adding players
-		print("Enter 0 to go back to the main menu. Press enter to add another player")
+		print("Enter 0 to go back to the main menu.")
 		menu_button = int(raw_input())
 		
 		#ends option one loop
