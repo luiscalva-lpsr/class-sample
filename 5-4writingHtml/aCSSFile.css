@@ -1,0 +1,26 @@
+body{
+  background-color:#666699;
+}
+div{
+  background-color: #660066;
+  height: 50px
+}
+h1{
+  color: #006666
+}
+img{
+  border: 20px solid #6699CC;
+}
+h2{
+  color: #66FF99;
+}
+a:hover{
+  color: #00FF66;
+}
+a{
+ text-decoration: none; 
+ color: #CCFFFF
+}
+p{
+  color: #33FF66
+}
