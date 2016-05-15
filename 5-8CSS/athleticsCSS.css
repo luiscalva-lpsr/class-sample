@@ -1,0 +1,88 @@
+body{
+  font-family: Courier, Helvetica, Arial;  
+}
+
+#page{
+  border:30px solid white;
+  background-color: ;
+  padding: 20;
+  height: 950px
+  
+}
+
+#header{
+  background-color: white;
+  color: RebeccaPurple;
+  width:669;
+}
+
+#search {
+  float: right;
+  background-color: white;
+  width: 526;
+}
+
+a{
+  text-decoration: none;
+  color: RebeccaPurple;
+}
+
+#nav ul{
+  list-style-type: none;
+  text-align: left;
+  width: 80px;
+  height:110;
+  float:left;
+  background-color: white;
+}
+
+a:hover{
+  color: orchid;
+}
+
+a: visited{
+  color: #FF00FF;
+}
+
+#main{
+  background-image: url();
+  text-align: center;
+  color: RebeccaPurple;
+  background-color: white;
+  float: right;
+  width: 520px;
+  height: 400px;
+  margin: 16px;
+  border: 3px solid white;
+}
+#other{
+  width: 239px;
+  height: 276px;
+  float: right;
+  margin: 15px;
+  border: 15px solid white;
+  background-color: white;
+  color: RebeccaPurple;
+  text-align: center;
+}
+
+#college{
+  width: 212px;
+  height: 290;
+  float: right;
+  margin: 15px;
+  border: 8px solid white;
+  background-color: white;
+  color: RebeccaPurple;
+  text-align: center;
+}
+
+#footer{
+  clear: both;
+	padding: 10px;
+	background-color: white;
+	color: RebeccaPurple;
+	text-align: right;
+  width: 649px;
+}
+
