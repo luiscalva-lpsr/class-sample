@@ -3,28 +3,27 @@ body{
 }
 
 #page{
-  border:30px solid white;
-  background-color: ;
+  border:30px Dotted purple;
   padding: 20;
   height: 950px
   
 }
 
 #header{
-  background-color: white;
-  color: RebeccaPurple;
+  background-color: black;
+  color: purple;
   width:669;
+  border: 5px dotted purple;
 }
 
 #search {
-  float: right;
-  background-color: white;
+  background-color: black;
   width: 526;
 }
 
 a{
   text-decoration: none;
-  color: RebeccaPurple;
+  color: purple;
 }
 
 #nav ul{
@@ -33,7 +32,8 @@ a{
   width: 80px;
   height:110;
   float:left;
-  background-color: white;
+  border: 3px dotted purple;
+  background-color: black;
 }
 
 a:hover{
@@ -47,22 +47,22 @@ a: visited{
 #main{
   background-image: url();
   text-align: center;
-  color: RebeccaPurple;
-  background-color: white;
+  color: purple;
+  background-color: black;
   float: right;
   width: 520px;
   height: 400px;
   margin: 16px;
-  border: 3px solid white;
+  border: 3px dotted purple;
 }
 #other{
   width: 239px;
   height: 276px;
   float: right;
   margin: 15px;
-  border: 15px solid white;
-  background-color: white;
-  color: RebeccaPurple;
+  border: 15px dotted purple;
+  background-color: black;
+  color: purple;
   text-align: center;
 }
 
@@ -71,17 +71,17 @@ a: visited{
   height: 290;
   float: right;
   margin: 15px;
-  border: 8px solid white;
-  background-color: white;
-  color: RebeccaPurple;
+  border: 8px dotted purple;
+  background-color: black;
+  color: purple;
   text-align: center;
 }
 
 #footer{
   clear: both;
 	padding: 10px;
-	background-color: white;
-	color: RebeccaPurple;
+	background-color: black;
+	color: purple;
 	text-align: right;
   width: 649px;
 }
